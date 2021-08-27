@@ -6,19 +6,19 @@ using UnityEngine.SceneManagement;
 public class ButtonManager : MonoBehaviour
 {
     
-    public void MainMenuPress(){
+    public static void MainMenuPress(){
         SceneManager.LoadScene("Main_Menu", LoadSceneMode.Single);
     }
 
-    public void PlayGamePress(){
+    public static void PlayGamePress(){
         SceneManager.LoadScene("Pong_Game", LoadSceneMode.Single);
     }
 
-    public void HelpPress(){
+    public static void HelpPress(){
         SceneManager.LoadScene("Help_Screen", LoadSceneMode.Single);
     }
 
-    public void QuitPress(){
+    public static void QuitPress(){
         Application.Quit();
     }
 }

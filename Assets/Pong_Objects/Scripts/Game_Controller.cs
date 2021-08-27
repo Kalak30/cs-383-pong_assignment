@@ -92,13 +92,12 @@ public class Game_Controller : MonoBehaviour
     void endGame(){
 
         gameOverText.canvasRenderer.SetAlpha(255);
-        StartCoroutine("Pause");
+        StartCoroutine("end");
         
     }
 
-    // Found this on unity fourm to pause game for certain amount of time with 
-    // Game objects being paused
-    private IEnumerator Pause(){
+    //Coroutine that pauses and ends the game by returning to main menu.
+    private IEnumerator end(){
         Time.timeScale = 0f;
         yield return new WaitForSecondsRealtime(3);
         Time.timeScale = 1;

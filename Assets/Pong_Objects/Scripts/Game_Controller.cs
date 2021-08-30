@@ -37,7 +37,7 @@ public class Game_Controller : MonoBehaviour
         scoreBoard_right.text = "0";
         scoreBoard_left.text = "0";
 
-        rightPoints = 9;
+        rightPoints = 0;
         leftPoints = 0;
 
 
